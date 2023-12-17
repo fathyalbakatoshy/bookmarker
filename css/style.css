@@ -1,0 +1,68 @@
+/* ----- START GLOBALE ROLE ----- */
+
+:root {
+  --header-font:'Pacifico',cursive;
+  --section-font: 'Righteous',sans-serif;
+}
+
+body {
+  font-family: 'PT Sans Caption', sans-serif;
+  background-color: #F7ECDE;
+}
+
+input:focus,
+input:hover {
+  border: none;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+/* ---- START MAIN STYLESHEET ----- */
+
+main h1 {
+  width: fit-content;
+  margin: 0 auto;
+  font-family: var(--header-font);
+  font-size: 50px;
+  color: #352e28;
+}
+
+main h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  z-index: -1;
+  background-color: #FEC260;
+  left: 0;
+  bottom: 10px;
+  transition: 0.5s;
+}
+
+main h1:hover::before {
+  height: 50%;
+}
+
+.bookmarker-body {
+  border: 2px dotted black;
+  border-right: none;
+  border-left: none;
+}
+.bookmarker-body h2 {
+  width: fit-content;
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 30px;
+}
+
