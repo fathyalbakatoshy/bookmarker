@@ -38,8 +38,10 @@ function display(value) {
     <tr>
       <td>${i + 1}</td>
       <td>${value[i].name}</td>
-      <td><button class="btn btn-danger" onclick="visitSite('https://${value[i].url}')">Visit</button></td>
-      <td><button onclick="deleteBook(${i})" class="btn btn-danger">Delete</button></td>
+      <td><button class="btn btn-warning" onclick="visitSite('https://${
+        value[i].url
+      }')"><i class="fa-solid fa-eye pe-2"></i>Visit</button></td>
+      <td><button onclick="deleteBook(${i})" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Delete</button></td>
     </tr>
     `;
   }
@@ -61,7 +63,6 @@ function validateBookName() {
   if (regex.test(siteName.value)) {
     siteName.classList.add("is-valid");
     siteName.classList.remove("is-invalid");
-    // siteName.classList.replace("valid-feedback", "invalid-feedback");
     return true;
   } else {
     siteName.classList.add("is-invalid");
