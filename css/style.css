@@ -10,11 +10,6 @@ body {
   background-color: #F7ECDE;
 }
 
-input:focus,
-input:hover {
-  border: none;
-  outline: none;
-}
 
 a {
   color: inherit;
