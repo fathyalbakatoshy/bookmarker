@@ -59,7 +59,7 @@ function deleteBook(index) {
 }
 
 function validateBookName() {
-  let regex = /^[a-z]{3,}$/;
+  let regex = /^[a-z]{3,}$/ig;
   if (regex.test(siteName.value)) {
     siteName.classList.remove("is-invalid");
     siteName.classList.add("is-valid");
